@@ -36,3 +36,4 @@ console.log(getStatus());
 ## License
 
 MIT
+trigger
