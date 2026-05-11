@@ -7,17 +7,31 @@
 
 ## Install
 
-\`\`\`bash
+```bash
 npm install @creadev.org/runtime
-\`\`\`
+```
 
 ## Usage
 
-\`\`\`typescript
-import { } from '@creadev.org/runtime';
+```typescript
+import { init, think, act, state, getStatus } from '@creadev.org/runtime';
 
-// ...
-\`\`\`
+await init();
+const response = await think('What is 2+2?');
+const result = await act('save', { key: 'value' });
+const opsCount = state();
+console.log(getStatus());
+```
+
+## API
+
+| Function | Description |
+|----------|-------------|
+| `init(options?)` | Initialize runtime |
+| `think(query)` | Process a query |
+| `act(operation, data?)` | Execute operation |
+| `state()` | Get operation count |
+| `getStatus()` | Get runtime status |
 
 ## License
 
