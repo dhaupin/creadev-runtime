@@ -1,15 +1,24 @@
 # @creadev.org/runtime
 
-Consumer runtime - uses framework + sandbox.
+> Runtime - think, act, state management
 
-```bash
+[![npm](https://img.shields.io/npm/v/@creadev.org/runtime)](https://www.npmjs.com/package/@creadev.org/runtime)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Install
+
+\`\`\`bash
 npm install @creadev.org/runtime
-```
+\`\`\`
 
-```typescript
-import { init, think, act } from '@creadev.org/runtime';
+## Usage
 
-await init();
-await think('what is meaning?');
-await act({ type: 'log', message: 'hello' });
-```
+\`\`\`typescript
+import { } from '@creadev.org/runtime';
+
+// ...
+\`\`\`
+
+## License
+
+MIT
