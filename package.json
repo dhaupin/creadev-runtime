@@ -1,0 +1,40 @@
+{
+  "name": "@creadev.org/runtime",
+  "version": "0.3.1",
+  "type": "module",
+  "description": "Runtime consumer app - uses framework, sandbox, security, qos, network, escrow, lock",
+  "keywords": [
+    "runtime",
+    "consumer",
+    "agent"
+  ],
+  "author": "dhaupin",
+  "repository": "https://github.com/dhaupin/creadev-runtime",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.6.1"
+  },
+  "dependencies": {
+    "@creadev.org/framework": "github:dhaupin/creadev-framework",
+    "@creadev.org/sandbox": "github:dhaupin/creadev-sandbox"
+  },
+  "files": [
+    "dist"
+  ]
+}
